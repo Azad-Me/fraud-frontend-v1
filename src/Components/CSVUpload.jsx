@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 const CSVUploadComponent = () => {
     const [selectedFile, setSelectedFile] = useState(null);
     const [isUploading, setIsUploading] = useState(false);
@@ -7,7 +6,8 @@ const CSVUploadComponent = () => {
     const [error, setError] = useState('');
 
     // Replace with your actual API endpoint
-    const FRAUD_DETECTION_API = "http://13.234.239.45:8000";
+    const FRAUD_DETECTION_API ="https://fraud-api.azadmeshram.info";
+
 
     const handleFileSelect = (event) => {
         const file = event.target.files[0];

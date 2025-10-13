@@ -17,7 +17,7 @@ const GenAIAnalysisResults = ({ isLoading,transData }) => {
             ${JSON.stringify(transData, null, 2)}
             `,
         });
-        console.log(response.text);
+        // console.log(response.text);
         setAnalysis(response.text);
     }
     
